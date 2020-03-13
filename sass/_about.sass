@@ -1,0 +1,16 @@
+.about
+    display: grid
+    grid-auto-rows: 700px
+    grid-template-columns: 1fr 5fr 3fr 1fr
+    grid-template-areas: ". about__text about__img ."
+    align-items: center
+    grid-gap: 50px 30px
+    grid-row-gap: 35px
+.about__text
+    grid-area: about__text
+.about__img
+    grid-area: about__img
+    img
+        width: 400px
+        height: auto
+

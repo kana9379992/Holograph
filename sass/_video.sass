@@ -1,0 +1,30 @@
+.video
+    
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("/img/video/video.jpg")
+    background-size: cover
+    background-position: center center
+    display: grid
+    grid-template-columns: 1fr
+    align-items: center
+    justify-self: center
+    grid-auto-rows: minmax(100vh, 100vh)
+    text-align: center
+    &:hover
+        cursor: pointer
+.material-icons
+    position: relative
+    text-align: center
+    font-size: 150px
+    color: #fff
+    &::before
+        content: ''
+        position: absolute
+        height: 400px
+        width: 400px
+        border: 1px solid white
+        border-radius: 50%
+        right: 50%
+        top: -70%
+        transform: translateX(50%)
+        opacity: 0.3
+    

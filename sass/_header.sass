@@ -4,22 +4,28 @@ img
     display: grid
     grid-template-rows: 1fr 2fr
     min-height: 100vh
-    background-image: url("/img/header/bg.jpg")
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("/img/header/bg.jpg")
     background-size: auto
 .navbar
     display: grid
-    align-items: left
     grid-template-columns: 1fr 12fr 20fr 1fr
     grid-template-areas: ". navbar-logo navbar-menu ."
     grid-auto-rows: minmax(min-content, max-content)
     align-items: center
 .navbar-menu
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr 
     grid-area: navbar-menu
     justify-self: end
+    color: #fff
+    text-decoration: none
+    
 .navbar-logo
     grid-area: navbar-logo
 .navbar-logo__title
+    color: #fff
     display: inline-block
 .header-text
+    color: #fff
     justify-self: center
     text-align: center
