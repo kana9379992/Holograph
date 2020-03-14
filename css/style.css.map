@@ -5,7 +5,8 @@
         "../sass/style.sass",
         "../sass/_header.sass",
         "../sass/_about.sass",
-        "../sass/_video.sass"
+        "../sass/_video.sass",
+        "../sass/_advantages.sass"
     ],
     "names": [],
     "file": "style.css"
