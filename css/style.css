@@ -97,6 +97,8 @@ img {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: about__img;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .about__img img {
@@ -119,7 +121,7 @@ img {
   -ms-grid-column-align: center;
       justify-self: center;
   grid-auto-rows: minmax(100vh, 100vh);
-  text-align: center;
+  text-align: center0;
 }
 
 .video:hover {
@@ -145,5 +147,48 @@ img {
   -webkit-transform: translateX(50%);
           transform: translateX(50%);
   opacity: 0.3;
+}
+
+.advantages {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 2fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  -ms-grid-rows: 150px 8fr 2fr;
+      grid-template-rows: 150px 8fr 2fr;
+      grid-template-areas: ". . advantages-headText . ." ". quality coin services . ";
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quality {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: quality;
+}
+
+.coin {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: coin;
+}
+
+.services {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: services;
+}
+
+.advantages-headText {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: advantages-headText;
+}
+
+.advantages-points img {
+  width: 100px;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */

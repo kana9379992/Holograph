@@ -1,0 +1,19 @@
+.advantages
+    display: grid
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr
+    grid-template-rows: 150px 8fr 2fr
+    grid-template-areas: ". . advantages-headText . ." ". quality coin services . "
+    justify-items: center
+    align-items: center
+.quality
+    grid-area: quality
+.coin
+    grid-area: coin
+.services
+    grid-area: services
+.advantages-headText
+    grid-area: advantages-headText
+
+.advantages-points img
+    width: 100px
+    height: auto
